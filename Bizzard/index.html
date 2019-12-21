@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bizzard: Let's Biz</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=McLaren|Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav class="sticky">
+        <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+            Bizzard
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <div id="fullPage">
+        <div class="section" id="section1">
+            <p>Have a knack in Biz Quizzing... ❔<p>
+            <p>This is the right place 😉</p> 
+        </div>
+        <div class="section" id="second-section">
+            <p>Global Brands<p>
+            <p style="font-size: 3vw"><a href="global.php">Head over</a> to know more about the FAANG and the BAT and about many more global brands</p>
+        </div>
+        <div class="section" id="third-section"> 
+            <p>Indian Brands<p>
+            <p style="font-size: 3vw">Read More about the Indian Brands ruling the business world</p>
+        </div>
+        <div class="section" id="fourth-section">
+            <p>Tata World<p>
+            <p style="font-size: 3vw">The history of this multinational conglomerate has a lot to say. Dive in</p>
+        </div>
+        <div class="section" id="fifth-section">
+            <p>Startup Upstarts<p>
+            <p style="font-size: 3vw">With Indian startups growing faster than ever, this section deserves its special mention</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullPage',{
+            autoScrolling: true,
+            navigation: true
+        })
+    </script>
+</body>
+<script>
+    
+    $(document).ready(function(){
+        $(".menu-icon").on("click", function(){
+                $("nav ul").toggleClass("showing");
+        });
+    });
+
+
+
+</script>
+</html>
